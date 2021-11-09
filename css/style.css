@@ -1,0 +1,66 @@
+body {
+    /* background-color: black; */
+    color: white;
+    background-image: url(./img/stock-photo-old-concrete-wall-texture-black-background-seamless-pattern-250nw-554431516.jpg);
+}
+
+.container form {
+    border: 1px rgb(87, 86, 86) solid;
+    border-radius: 15px;
+    background-color: #353a5f;
+    box-shadow: 5px 5px 5px #92b2f0;
+    position: relative;
+    opacity: 0.8;
+}
+
+.container form img {
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    z-index: 5;
+}
+
+label {
+    font-weight: 900;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table tbody tr td img {
+    width: 70px !important;
+    border-radius: 25%;
+    border: 1px solid gray;
+}
+
+nav {
+    background: linear-gradient(to right, #353a5f 60%, #9ebaf3) !important;
+}
+
+nav ul li a {
+    color: rgb(0, 92, 38);
+
+}
+
+.card {
+    background-color: #353a5f;
+    color: #9ebaf3;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+}
+
+#registratonicustomer {
+    display: none;
+}
+
+#btnlogin,
+#btnregistraton {
+    border-radius: 15px;
+}
