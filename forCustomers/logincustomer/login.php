@@ -31,7 +31,9 @@ if (isset($_POST['rname'])) {
     $imgName = $_FILES['rimage']['name'] . time();
     $imgtype = $_FILES['rimage']['type'];
     $imgTmp = $_FILES['rimage']['tmp_name'];
-    $location = '/e_commerce/customers/images/';
+
+    // $location = '/e_commerce/customers/images/';
+    $location = '../../customers/images/';
 
 
 
