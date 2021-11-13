@@ -47,7 +47,7 @@ authAdmin();
                 </select>
             </div>
 
-            <button name="send" class="btn btn-info btn-block">add</button>
+            <button name="send" class="btn btn-info btn-block hvr-wobble-skew">add</button>
         </div>
     </form>
 </div>

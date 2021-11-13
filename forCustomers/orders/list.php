@@ -1,11 +1,11 @@
 <?php
-include "../shared/header.php";
-include "../shared/nav.php";
-include "../func/database.php";
-include "../func/function.php";
+include "../../shared/header.php";
+include "../../shared/nav.php";
+include "../../func/database.php";
+include "../../func/function.php";
 
-
-$select = "SELECT orders.nop, orders.cost,orders.time, orders.id ,orders.customerid, orders.productid,customers.name as custname, products.name prodname  FROM orders INNER JOIN customers on orders.customerid = customers.id INNER JOIN products on orders.productid = products.id;";
+$seid = $_SESSION['customerid'];
+$select = "SELECT orders.nop, orders.cost,orders.time, orders.id ,orders.customerid, orders.productid,customers.name as custname, products.name prodname  FROM orders INNER JOIN customers on orders.customerid = customers.id INNER JOIN products on orders.productid = products.id WHERE orders.customerid = $seid";
 $getelement = mysqli_query($conn, $select);
 
 
@@ -15,7 +15,7 @@ if (isset($_GET['del'])) {
     mysqli_query($conn, $select);
     header('location: /e_commerce/orders/list.php');
 }
-authAdmin();
+authcustomeronly();
 
 ?>
 
@@ -51,5 +51,5 @@ authAdmin();
 </div>
 
 <?php
-include "../shared/footer.php";
+include "../../shared/footer.php";
 ?>

@@ -27,6 +27,13 @@ function authcustomer()
     }
 }
 
+function authcustomeronly()
+{
+    if (isset($_SESSION['customerlogin'])) {
+    } else {
+        header('location: /e_commerce/admins/login.php');
+    }
+}
 function mess()
 {
 

@@ -33,13 +33,13 @@ if (isset($_POST['name'])) {
 <div class="container">
 
     <div class="alert alert-warning">
-        if you are a customer? please <a href="/e_commerce/forCustomers/logincustomer/login.php"><span class="badge badge-primary badge-pill">press here</span></a>
+        if you are a customer? please <a href="/e_commerce/forCustomers/logincustomer/login.php"><span class="badge badge-primary badge-pill hvr-pulse">press here</span></a>
     </div>
 
     <form method="post" class="mt-5">
         <div class="m-4">
             <div class="d-flex justify-content-center">
-                <img src="../css/img/log-in.png" alt="">
+                <img src="../css/img/log-in.png" alt="" class="hvr-wobble-horizontal">
             </div>
             <div class="form-group">
                 <label for="">name</label>
@@ -66,7 +66,7 @@ if (isset($_POST['name'])) {
                 <?php } ?>
             </div>
 
-            <button name="send" class="btn btn-info btn-block">login</button>
+            <button name="send" class="btn btn-info btn-block hvr-wobble-skew">login</button>
         </div>
     </form>
 

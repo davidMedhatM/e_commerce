@@ -28,7 +28,7 @@ if (isset($_POST['productid'])) {
 
 
 
-authcustomer()
+authcustomeronly()
 ?>
 
 
@@ -70,7 +70,7 @@ authcustomer()
                         mess();
                     } ?>
 
-            <button name="send" id="send" class="btn btn-info btn-block">add</button>
+            <button name="send" id="send" class="btn btn-info btn-block hvr-wobble-skew">add</button>
         </div>
     </form>
 </div>

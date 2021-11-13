@@ -58,7 +58,7 @@ authAdmin();
                         mess();
                     } ?>
 
-            <button name="send" class="btn btn-info btn-block">update</button>
+            <button name="send" class="btn btn-info btn-block hvr-wobble-skew">update</button>
         </div>
     </form>
 </div>

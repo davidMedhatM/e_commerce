@@ -64,3 +64,10 @@ nav ul li a {
 #btnregistraton {
     border-radius: 15px;
 }
+
+.showbtnsearch button{
+    width: 20% !important;
+}
+.showbtnsearch select{
+    width: 80% !important;
+}

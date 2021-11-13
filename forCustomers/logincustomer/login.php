@@ -52,23 +52,23 @@ if (isset($_POST['rname'])) {
 <div class="container">
 
     <div class="alert alert-warning">
-        if you are an admin? please <a href="/e_commerce/admins/login.php"><span class="badge badge-primary badge-pill">press here</span></a>
+        if you are an admin? please <a href="/e_commerce/admins/login.php"><span class="badge badge-primary badge-pill hvr-pulse">press here</span></a>
     </div>
 
     <div class="d-flex justify-content-center">
         <div class="col-md-5">
 
 
-            <div class="d-flex justify-content-between mt-5">
-                <button class="btn btn-outline-info " id="btnlogin">login <i class="fas fa-sign-in-alt"></i></button>
-                <button class="btn btn-outline-info " id="btnregistraton">registraton <i class="far fa-registered"></i></button>
+            <div class="d-flex justify-content-between mt-5 ">
+                <button class="btn btn-outline-info  hvr-icon-bounce" id="btnlogin">login <i class="fas fa-sign-in-alt hvr-icon"></i></button>
+                <button class="btn btn-outline-info hvr-icon-pulse-shrink" id="btnregistraton">registraton <i class="far fa-registered hvr-icon"></i></button>
             </div>
 
             <div id="logincustomer">
                 <form method="post" class="" enctype="multipart/form-data">
                     <div class="m-4">
                         <div class="d-flex justify-content-center">
-                            <img src="../../css/img/log-in.png" alt="">
+                            <img src="../../css/img/log-in.png" alt="" class="hvr-wobble-horizontal">
                         </div>
 
                         <div class="form-group">
@@ -86,7 +86,7 @@ if (isset($_POST['rname'])) {
                                 } ?>
 
 
-                        <button name="send" class="btn btn-info btn-block">login</button>
+                        <button name="send" class="btn btn-info btn-block hvr-wobble-skew">login</button>
                     </div>
                 </form>
             </div>
@@ -112,7 +112,7 @@ if (isset($_POST['rname'])) {
                             <input type="file" name="rimage" class="form-control">
                         </div>
 
-                        <button name="rsend" class="btn btn-info btn-block">add</button>
+                        <button name="rsend" class="btn btn-info btn-block hvr-wobble-skew">add</button>
                     </div>
                 </form>
             </div>

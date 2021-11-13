@@ -18,7 +18,7 @@ if (isset($_POST['text'])) {
         header('location: /e_commerce/index.php');
     }
 }
-authcustomer()
+authcustomeronly()
 
 ?>
 
@@ -39,7 +39,7 @@ authcustomer()
                 <input type="text" required readonly name="customerid" class="form-control" value="<?php echo $_SESSION['customerid']; ?>">
             </div>
 
-            <button name="send" class="btn btn-info btn-block">add</button>
+            <button name="send" class="btn btn-info btn-block hvr-wobble-skew">add</button>
         </div>
     </form>
 </div>

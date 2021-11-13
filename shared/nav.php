@@ -9,7 +9,8 @@ if (isset($_GET['logOut'])) {
 }
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand shake shake-constant shake-slow shake-constant--hover" href="#">
+  <img src="/e_commerce/css/img/davidLogo.png" width="50px" alt="">
     <?php
     if (isset($_SESSION['adminlogin'])) {
       echo $_SESSION['adminlogin'];
@@ -135,36 +136,11 @@ if (isset($_GET['logOut'])) {
             <a class="dropdown-item" href="/e_commerce/forCustomers/feedback/add.php">add feedback</a>
           </div>
         </li>
-      <?php } elseif (isset($_SESSION['adminlogin'])) {
-
-      ?>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-            category
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="/e_commerce/forCustomers/category/list.php">list category</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-            products
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="/e_commerce/forCustomers/products/list.php">list products</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-            feedback
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="/e_commerce/forCustomers/feedback/add.php">add feedback</a>
-          </div>
-        </li>
-
-      <?php       } else {
-      } ?>
+        <li class="nav-item ">
+        <a class="nav-link" href="/e_commerce/forCustomers/orders/list.php">my orders <span class="sr-only">(current)</span></a>
+      </li>
+      <?php }  ?>
+        
 
 
 
@@ -172,10 +148,10 @@ if (isset($_GET['logOut'])) {
   </div>
   <?php if ($_SESSION) : ?>
     <form>
-      <button class="btn btn-danger" name="logOut">log out <i class="fas fa-sign-out-alt"></i></button>
+      <button class="btn btn-danger hvr-icon-pulse-grow" name="logOut">log out <i class="fas fa-sign-out-alt hvr-icon"></i></button>
     </form>
   <?php else : ?>
-    <a class="btn btn-outline-info my-2 my-sm-0" href="/e_commerce/admins/login.php" type="submit">login <i class="far fa-user-circle"></i></a>
+    <a class="btn btn-outline-info my-2 my-sm-0 hvr-icon-pulse-grow" href="/e_commerce/admins/login.php" type="submit">login <i class="far fa-user-circle hvr-icon"></i></a>
   <?php endif; ?>
 
 </nav>
